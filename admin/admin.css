@@ -1,0 +1,64 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}     
+
+#heading{
+    padding: 2rem;
+    text-align: center;
+    font-family: 'Satoshi';
+    color: #64748b;
+    /* background-color: #111827; */
+}  
+#box{
+    padding: 2rem 1rem;
+    font-family: 'Satoshi';
+    ;
+}
+#searchbox{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.tablebox{
+    border-radius: 3rem;
+}
+.table_thead{
+    position: sticky;
+    top: 0;
+    padding: 1rem;
+}
+
+.id{
+    width: 5%;
+}
+.name{
+    width: 10;
+}
+.price {
+    width: 5%;
+}
+.desc{
+    width: 28%;
+}
+.cat{
+    width: 10%;
+}
+.img{
+    width: 27%;
+    text-align: center;
+}
+.rating{
+    width: 5%;
+}
+.crud{
+    width: 10%;
+}
+.Images{
+    width:80%;
+    height: 20rem;
+}
+
+

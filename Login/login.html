@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+<body>
+
+    <div id="loginSection" class="container d-flex justify-content-center align-items-center flex-column">
+        <form id="loginBOX" class="container border-dark-subtle">
+            <div class="row text-center mb-5">
+                <h4 class="display-6 text-uppercase">
+                    Login
+                </h4>
+            </div>
+            <div id="un" class="row mb-4">
+                <input type="text" id="userbox" name="userbox" placeholder="Enter Username" required class="form-control">
+            </div>
+            <div id="pass" class="row mt-1 mb-4">
+                <input type="password" id="passbox" name="passbox" placeholder="Enter Password" required class="form-control">
+            </div>
+            <div id="role" class="row m-2">
+                <div class="col-5 m-auto text-center">
+                    <label for="user" class="form-label">User</label><input type="radio" value="user" id="user" name="role"></div>
+                <div class="col-5 m-auto text-center">
+                    <label for="admin" class="form-label">Admin</label><input type="radio" value="admin" id="admin" name="role"></div>
+            </div>
+            <div id="submit" class="center">
+                <input type="submit" value="Login" class="btn btn-primary">
+            </div>
+            <div class="row">
+                <label class="form-label text-center" id="label1">
+
+                </label>
+            </div>
+        </form>
+
+        <a href="../Register/Register.html" class=" btn btn-danger mt-5 border-3">Or Register Now</a>
+    </div>
+r
+    <script src="login.js"></script>
+    <script src="https://kit.fontawesome.com/2e137cb010.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="container-fluid p-3">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-1"></div>
+            <div class="col-1"></div>
+            <div class="col-6 d-flex justify-content-center align-items-center">
+                <h1><a href="#" class="text-decoration-none">E-Commerce</a></h1>
+            </div>
+            <div class="col-2" id="lblc" class="d-flex justify-content-center align-items-center">
+                <div class="m-auto">
+                 <label id="lblName">
+                    
+                 </label>
+                </div>
+            </div>
+            <div class="col-1">
+                <div class="dropdown" id="userbtn">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="usrdropdown">
+                      
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><button class="dropdown-item" type="button" id="ProfileBtn">Profile</button></li>
+                      <li><button class="dropdown-item" type="button" id="OrdersBtn">Cart</button></li>
+                      <li><button class="dropdown-item" type="button" id="logoutBtn">Log out</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid p-1 bg-light-subtle">
+        <div class="row">
+        <div class="col-1 p-2">
+            <div class="dropdown" id="userbtn">
+                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="sort">
+                  Sort by
+                </button>
+                <ul class="dropdown-menu">
+                  <li><button class="dropdown-item" type="button" id="SortPrice">Price</button></li>
+                  <li><button class="dropdown-item" type="button" id="SortRating">Rating</button></li>
+                  <li><button class="dropdown-item" type="button" id="SortReviews">Reviews</button></li>
+                </ul>
+                </div>
+        </div>
+        <div class="col-1 p-2">
+            <div class="dropdown" id="userbtn">
+            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="cat">
+              Category
+            </button>
+            <ul class="dropdown-menu">
+              <li><button class="dropdown-item" type="button" id="CatAll">All</button></li>
+              <li><button class="dropdown-item" type="button" id="CatMen">Men's Category</button></li>
+              <li><button class="dropdown-item" type="button" id="CatWomen">Women's Category</button></li>
+              <li><button class="dropdown-item" type="button" id="CatElec">Electronics</button></li>
+              <li><button class="dropdown-item" type="button" id="CatJwel">Jewelery</button></li>
+            </ul>
+            </div>
+        </div>
+    </div>
+
+    <section id="Products">
+
+    </section>
+
+    <div class="m-auto container">
+        <div class="row">
+            <div class="col-3 m-auto">
+                <label class="form-label">Per Page</label>
+                <input type="number" id="PerPageChange" min="5" max="10" class="form-control-sm">
+            </div>
+        </div>
+    </div>
+    <nav aria-label="Page navigation example" >
+        <ul class="pagination justify-content-center" id="pageination">
+          
+        </ul>
+    </nav>
+
+
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/2e137cb010.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>

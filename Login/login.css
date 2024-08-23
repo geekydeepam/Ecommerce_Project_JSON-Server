@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#loginSection{
+    width: 100%;
+    height: 100vh;
+}
+#loginBOX{
+    
+    border-radius: 5rem;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    padding: 5rem;
+    width: 30rem;
+    height: 29rem;
+
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
