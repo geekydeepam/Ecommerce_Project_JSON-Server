@@ -19,7 +19,7 @@ pagechange.value=5
 
 if(userdata===null)
 {
-idname.innerHTML="<a href=\"Login/Login.html\" class=\"text-decoration-none btn btn-secondary\">Login Now</a>"
+idname.innerHTML="<a href=\"Login/login.html\" class=\"text-decoration-none btn btn-secondary\">Login Now</a>"
 userbtn.setAttribute("hidden","true")
 }
 else{
