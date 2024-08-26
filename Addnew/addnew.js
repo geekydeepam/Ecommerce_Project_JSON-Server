@@ -40,17 +40,62 @@ function InsertData()
         rating,
     }
 
-    PostData(Product)
+    PostData(Product) //post in Product JSON end-point
+    PostinCat(Category,Product) //post in Category end point
+}
+
+ async function PostinCat(cat,obj)
+{
+    let api=""
+    switch (cat) {
+        case "men's clothing":
+            api="Mens"
+            break;
+        case "women's clothing":
+            api="Womens"
+            break;
+        case "jewelery":
+            api="Jewelery"
+            break;
+        case "electronics":
+            api="Electronics"
+            break;
+        default:
+            alert("Invalid  Category")
+            break;
+    }
+
+    try{
+        await fetch(`http://localhost:3000/${api}`,{
+            method:"POST",
+            body:JSON.stringify(obj),
+        headers:{
+            "Content-Type":"application/json"
+        }
+        })
+    }
+    catch(error)
+    {
+        alert(error)
+    }
 }
 
 async function  PostData(params) {
-    await fetch("http://localhost:3000/Products",{
-        method:"POST",
-        body:JSON.stringify(params),
-    headers:{
-        "Content-Type":"application/json"
+    try{
+        await fetch("http://localhost:3000/Products",{
+            method:"POST",
+            body:JSON.stringify(params),
+        headers:{
+            "Content-Type":"application/json"
+        }
+        })
     }
-    })
+    catch(error)
+    {
+        alert(error)
+        console.log(error);
+    }
+    
 
     alert("Saved Succesfully")
 }

@@ -11,6 +11,7 @@ let userbtn=document.getElementById("userbtn")
 
 let pagechange=document.getElementById("PerPageChange")
 pagechange.value=5
+let cat_name=document.getElementById("cat_name")
 
 
 
@@ -22,7 +23,8 @@ if(userdata===null)
 idname.innerHTML="<a href=\"Login/login.html\" class=\"text-decoration-none btn btn-secondary\">Login Now</a>"
 userbtn.setAttribute("hidden","true")
 }
-else{
+else
+{
     usrdrp.innerText=userdata[0][0]["Username"]
     userbtn.removeAttribute("hidden")
 }
@@ -91,6 +93,8 @@ async function getProducts() {
     let data1=await fetch(`${api}?_page=1&_per_page=${per_page}`)
     let actualdata1=await data1.json()
     actualdata1.data.forEach(mapdata)
+
+    cat_name.innerText="All Category"
     
 }
 
@@ -176,6 +180,8 @@ async function getMensProduct() {
     let data1=await fetch(`${api}?_page=1&_per_page=${per_page}`)
     let actualdata1=await data1.json()
     actualdata1.data.forEach(mapdata)
+
+    cat_name.innerText="Men's"
 }
 
 //load womens Product on womens Category Click
@@ -193,6 +199,8 @@ async function getWomensProduct() {
     let data1=await fetch(`${api}?_page=1&_per_page=${per_page}`)
     let actualdata1=await data1.json()
     actualdata1.data.forEach(mapdata)
+
+    cat_name.innerText="Women's"
 }
 
 //load electronics Product on electronics Category Click
@@ -211,6 +219,8 @@ async function getElecProduct() {
     let data1=await fetch(`${api}?_page=1&_per_page=${per_page}`)
     let actualdata1=await data1.json()
     actualdata1.data.forEach(mapdata)
+
+    cat_name.innerText="Electronics's"
 }
 
 //load electronics Product on electronics Category Click
@@ -228,6 +238,8 @@ async function getJewProduct() {
     let data1=await fetch(`${api}?_page=1&_per_page=${per_page}`)
     let actualdata1=await data1.json()
     actualdata1.data.forEach(mapdata)
+
+    cat_name.innerText="Jewelery's"
 }
 
 
@@ -244,10 +256,7 @@ function Pagination(obj)
     for(let i=1;i<=pagesNum;i++)
     {
         makePagebtn(i)
-    }
-
-    
-    
+    }  
 }
 function makePagebtn(num)
 {
@@ -409,3 +418,4 @@ function SendToCart()
 //     let actualdata1=await data1.json()
 //     actualdata1.data.forEach(mapdata)   
 // }
+

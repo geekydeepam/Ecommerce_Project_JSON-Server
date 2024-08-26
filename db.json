@@ -493,14 +493,24 @@
       "total": 10.99
     },
     {
-      "id": "4",
+      "id": "2",
       "Product_ID": "4",
       "ProductName": "Mens Casual Slim Fit",
       "image": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
       "UserID": "2",
       "Username": "saniya123",
+      "Quantity": 2,
+      "total": "150"
+    },
+    {
+      "id": "3",
+      "Product_ID": "6",
+      "ProductName": "Solid Gold Petite Micropave ",
+      "image": "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg",
+      "UserID": "2",
+      "Username": "saniya123",
       "Quantity": 1,
-      "total": 15.99
+      "total": "168"
     },
     {
       "id": "4",
@@ -511,16 +521,6 @@
       "Username": "saniya123",
       "Quantity": 1,
       "total": 599
-    },
-    {
-      "id": "5",
-      "Product_ID": "3",
-      "ProductName": "Mens Cotton Jacket",
-      "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
-      "UserID": "2",
-      "Username": "saniya12",
-      "Quantity": 1,
-      "total": "100"
     }
   ]
 }

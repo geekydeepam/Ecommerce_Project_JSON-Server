@@ -109,9 +109,9 @@ async function UpdatePassword()
     })
 
     localStorage.removeItem("User")
-    alert("Login Now")
 
     window.location.href="../Login/login.html"
+    alert("Login Now")
 }
 
 
