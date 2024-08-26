@@ -1,5 +1,32 @@
+
+
+let userdata=JSON.parse(localStorage.getItem("Admin"))
+
+if(userdata===null){
+    window.location.href="../index.html"
+}
+document.getElementById("adminlbl").innerText=`Admin : ${(userdata[0][0]["Fullname"]).split(' ')[0]}`
+
+document.getElementById("Logoutbtn").addEventListener("click",Logout)
+
+function Logout()
+{
+    localStorage.removeItem("Admin")
+    window.location.href=""
+}
+
+
+
+document.getElementById("cancel_search").setAttribute("hidden","true")
+document.getElementById("cancel_search").addEventListener("click",Clear)
 let tbody=document.getElementById("tbody")
 
+
+function Clear()
+{
+    document.getElementById("inpbox").value=""
+    getProducts()
+}
 
 getProducts()
 
@@ -8,16 +35,15 @@ async function getProducts() {
         let data= await fetch("http://localhost:3000/Products")
     let actualdata=await data.json()
 
+    tbody.innerHTML=""
+
     actualdata.forEach(mapdata)
     }
     catch(error)
     {
         console.log(error);
         
-    }
-    
-    
-    
+    }  
 }
 
  function mapdata(el,i,arr)
@@ -115,18 +141,22 @@ async function  deleteME(params) {
 }
 
 let searchBtn=document.getElementById("inpbtn")
-let id;
+
 
 searchBtn.addEventListener("click",getProductByID)
 
 async function getProductByID()
 {
     event.preventDefault()
-    id=document.getElementById("inpbox").value
-    let data=await fetch(`http://localhost:3000/Products/${id}`)
-    let actualdata=data.json()
+    let id=document.getElementById("inpbox").value
 
+    let data=await fetch(`http://localhost:3000/Products/${id}`)
+    let actualdata=await data.json()
+
+    tbody.innerHTML=""
     mapProductData(actualdata)
+
+    document.getElementById("cancel_search").removeAttribute("hidden")
 }
 
 async function mapProductData(obj) {
@@ -166,7 +196,7 @@ async function mapProductData(obj) {
 
     let rating=document.createElement("td")
     rating.setAttribute("class","ratings")
-    rating.innerText=`${obj.rating.rate}/${obj.rating.count}`
+    rating.innerText=`${obj.rating["rate"]}/${obj.rating["count"]}`
 
     let crud=document.createElement("td")
     crud.setAttribute("class","crud")

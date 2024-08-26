@@ -39,6 +39,8 @@ async function Login() {
                     }
                     else if(role==="admin")
                     {
+                        let userdata=[actualdata]
+                        localStorage.setItem("Admin",JSON.stringify(userdata))
                         window.location.href="../admin/admin.html"
                     }
                 }

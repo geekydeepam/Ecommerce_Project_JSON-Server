@@ -20,7 +20,7 @@ let cat_name=document.getElementById("cat_name")
 
 if(userdata===null)
 {
-idname.innerHTML="<a href=\"Login/login.html\" class=\"text-decoration-none btn btn-secondary\">Login Now</a>"
+idname.innerHTML="<a href=\"Login/login.html\" class=\"button-48\"><span class=\"text\">Login Now</span></a>"
 userbtn.setAttribute("hidden","true")
 }
 else

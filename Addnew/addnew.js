@@ -40,7 +40,7 @@ function InsertData()
         rating,
     }
 
-    PostData(Product) //post in Product JSON end-point
+    PostDatainProduct(Product) //post in Product JSON end-point
     PostinCat(Category,Product) //post in Category end point
 }
 
@@ -80,7 +80,7 @@ function InsertData()
     }
 }
 
-async function  PostData(params) {
+async function  PostDatainProduct(params) {
     try{
         await fetch("http://localhost:3000/Products",{
             method:"POST",
