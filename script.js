@@ -134,9 +134,10 @@ async function getProducts() {
     ProductImage.setAttribute("class","Image")
     ProductImage.src=el.image
 
-    let ProductLink=document.createElement("a")
+    let ProductLink=document.createElement("button")
     ProductLink.setAttribute("class","Product_details")
-    ProductLink.href=`./Product_details.html/${el.id}`
+    ProductLink.addEventListener("click",ViewDetails)
+    ProductLink.value=el.id;
 
     let Productinfo=document.createElement("div")
     Productinfo.setAttribute("class","ProductInfo")
@@ -402,6 +403,24 @@ function SendToCart()
 {
     window.location.href="Cart/cart.html"
 }
+
+
+
+ async function ViewDetails()
+{
+    let data=await fetch(`http://localhost:3000/Products/${this.value}`)
+    let actualdata=await data.json()
+    
+    let prodata=localStorage.setItem("Item",JSON.stringify(actualdata))
+    window.location.href="ViewDetails/ViewDetails.html"
+}
+
+
+
+
+
+
+
 
 // document.getElementById("SortPrice").addEventListener("click",SortByPrice)
 

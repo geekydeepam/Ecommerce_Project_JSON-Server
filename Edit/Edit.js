@@ -69,8 +69,11 @@ async function getIDData() {
     }
     catch(error)
     {
-        alert(error)
-        Cancel()
+        if(404)
+        {
+            alert("Item Does't Exist")
+            Cancel()
+        }
     }
 }
     
