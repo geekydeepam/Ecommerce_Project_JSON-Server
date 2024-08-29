@@ -1,14 +1,31 @@
+let prodData=JSON.parse(localStorage.getItem("Prod"))
+
 
 let searchForm=document.getElementById("search-form")
 searchForm.addEventListener("submit",getIDData)
 let id;
-FormDisabled()
+
 let Post_form=document.getElementById("form-section")
 
 Post_form.addEventListener("submit",PostData)
 
 let del=document.getElementById("delete")
 del.addEventListener("click",delItem)
+
+let iniCat=""
+
+
+if(prodData===null)
+{
+    FormDisabled()
+}
+else{
+    id=prodData[0]["id"]
+    iniCat=prodData[0]["category"]
+    Filldata(prodData[0])
+    document.getElementById("name").focus()
+}
+
 
 
 
@@ -79,6 +96,7 @@ function Filldata(obj)
 
     let cat=inpform.Category
     cat.value=obj.category
+    iniCat=obj.category
 
     let image=inpform.imageurl
     image.value=obj.image
@@ -92,10 +110,34 @@ function Filldata(obj)
     count.value=rating["count"]
 }
 
- async function PostData()
+function PostData()
 {
     event.preventDefault()
     let obj=getdata()
+    try {
+        UpdateinProduct(obj)
+        if(iniCat===obj.category)
+        {
+            UpdateinCat(obj.category,obj)
+        }
+        else{
+            DeleteFromCat(iniCat)
+            AddinNewCat(obj.category,obj)
+        }
+    if(prodData!=null)
+    {
+        localStorage.removeItem("Prod")
+    }
+        alert("Saved Succesfully")
+    } catch (error) {
+        console.log(error)
+    }
+    
+    
+}
+
+async function UpdateinProduct(obj) {
+    
     await fetch(`http://localhost:3000/Products/${id}`,{
         method:"PUT",
         body:JSON.stringify(obj),
@@ -103,9 +145,102 @@ function Filldata(obj)
             "Content-Type":"application/json"
         }
     })
-
-    alert("Saved Succesfully")
+    alert("updated in Products");
+    
 }
+
+async function UpdateinCat(cat,obj) {
+    let api=""
+    switch (cat) {
+        case "men's clothing":
+            api="Mens"
+            break;
+        case "women's clothing":
+            api="Womens"
+            break;
+        case "jewelery":
+            api="Jewelery"
+            break;
+        case "electronics":
+            api="Electronics"
+            break;
+        default:
+            alert("Invalid  Category")
+            break;
+    }
+
+    await fetch(`http://localhost:3000/${api}/${id}`,{
+        method:"PUT",
+        body:JSON.stringify(obj),
+        headers:{
+            "Content-Type":"application/json"
+        }
+    })
+
+   alert(`updated in ${api}` );
+}
+
+
+async function DeleteFromCat(obj) {
+
+    let api=""
+    switch (obj) {
+        case "men's clothing":
+            api="Mens"
+            break;
+        case "women's clothing":
+            api="Womens"
+            break;
+        case "jewelery":
+            api="Jewelery"
+            break;
+        case "electronics":
+            api="Electronics"
+            break;
+        default:
+            alert("Invalid  Category")
+            break;
+    }
+    await fetch(`http://localhost:3000/${api}/${id}`,{
+        method:"DELETE"
+    })
+
+   alert(`delted in ${api}` );
+}
+
+async function AddinNewCat(cat,obj) {
+    let api=""
+    switch (cat) {
+        case "men's clothing":
+            api="Mens"
+            break;
+        case "women's clothing":
+            api="Womens"
+            break;
+        case "jewelery":
+            api="Jewelery"
+            break;
+        case "electronics":
+            api="Electronics"
+            break;
+        default:
+            alert("Invalid  Category")
+            break;
+    }
+    obj.id=id;
+    await fetch(`http://localhost:3000/${api}`,{
+        method:"POST",
+        body:JSON.stringify(obj),
+        headers:{
+            "Content-Type":"application/json"
+        }
+    })
+
+    alert(`added in ${api}` );
+}
+
+
+
 
 function getdata()
 {
@@ -135,9 +270,43 @@ function getdata()
 
  async function delItem()
 {event.preventDefault()
-    await fetch(`http://localhost:3000/Products/${id}`,{
-        method:"DELETE"
-    })
+    try {
+        await fetch(`http://localhost:3000/Products/${id}`,{
+            method:"DELETE"
+        })
+        alert("del from product")
+    } catch(error){console.log(error);
+    }
+    try{
+        let api=""
+        switch (iniCat) {
+            case "men's clothing":
+                api="Mens"
+                break;
+            case "women's clothing":
+                api="Womens"
+                break;
+            case "jewelery":
+                api="Jewelery"
+                break;
+            case "electronics":
+                api="Electronics"
+                break;
+            default:
+                alert("Invalid  Category")
+                break;
+        }
+        await fetch(`http://localhost:3000/${api}/${id}`,{
+            method:"DELETE"
+        })
+
+        alert(`del from ${api}`)
+    }
+        catch (error) {
+        console.log(error)
+    }
+    
+
 
     alert("Succesfully Deleted")
 }

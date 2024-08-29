@@ -141,3 +141,42 @@ window.location.href="../Login/login.html"
 
     
 }
+
+
+document.getElementById("delprofbtn").addEventListener("click",deleteProfile)
+
+async function  deleteProfile() {
+   if(confirm("Are You Sure?"))
+    {
+        event.preventDefault()
+        // try {
+        //     await fetch(`http://localhost:3000/Users/${userdata[0][0]["id"]}`,{
+        //         method:"DELETE"
+        //     })
+        //     alert("deleted from user")
+        // } catch (error) {
+        //     alert(error)
+        // }
+        try {
+            let data=await fetch (`http://localhost:3000/Users/${userdata[0][0]["id"]}`)
+            let actualdata =await data.json()
+            console.log(actualdata)
+            // for(let i=0;i<actualdata.length;i++)
+            // {
+            //     DeleteFromCart()
+            // }
+            // alert("deleted from carts")
+        } catch (error) {
+            alert(error)
+        }
+    
+        
+    }
+    
+}
+
+async function  DeleteFromCart(params) {
+    await fetch(`http://localhost:3000/Cart/${params}`,{
+        method:"DELETE",
+    })
+}

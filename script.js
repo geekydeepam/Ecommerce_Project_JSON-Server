@@ -25,7 +25,7 @@ userbtn.setAttribute("hidden","true")
 }
 else
 {
-    usrdrp.innerText=userdata[0][0]["Username"]
+    usrdrp.innerText=(userdata[0][0]["Fullname"]).split(' ')[0]
     userbtn.removeAttribute("hidden")
 }
 

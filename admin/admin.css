@@ -15,7 +15,7 @@
 #box{
     padding: 2rem 1rem;
     font-family: 'Satoshi';
-    ;
+    
 }
 #searchbox{
     display: flex;
@@ -27,7 +27,7 @@
 }
 .table_thead{
     position: sticky;
-    top: 0;
+    top: 2.9rem;
     padding: 1rem;
 }
 

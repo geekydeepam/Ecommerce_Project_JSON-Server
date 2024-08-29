@@ -2,6 +2,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: satoshi;
+    
+}
+body{
+    
+
 }
 
 #navbar{
@@ -22,27 +28,29 @@
 }
 
 #Products{
-    background-color: rgb(236, 233, 228);
+    background-color:#E2DAD6;
     display: grid;
     grid-template-columns: repeat(5,1fr);
     gap: 2rem;
+    border-radius: 1rem;
 }
 
 
 .cards{
-    background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    background-color: #F5EDED;
+   
     width:20rem;
     height:33rem;
     margin: auto;
     margin-top: 1.5rem;
     margin-bottom: 1rem;
     padding: 1rem;
-    border-radius: 1rem;
     box-sizing: border-box;
 
     display: flex;
     flex-direction: column;
+
+    border-radius: 12px;
     
 }
 .cardTitles{
@@ -92,14 +100,19 @@
     text-decoration: none;
 }
 
-#lblName,#lblc{
-    
+#indexNav{
+    background-color: #6482AD;
+    color: #222831;
+}
+#indexNav2
+{
+    background-color: #7FA1C3;
 }
 
 /* button Login  */
 .button-48 {
     appearance: none;
-    background-color: #c6c4c4;
+    background-color: #E2DAD6;
     border-width: 0;
     box-sizing: border-box;
     color: #000000;
@@ -130,7 +143,7 @@
   .button-48:before {
     animation: opacityFallbackOut .5s step-end forwards;
     backface-visibility: hidden;
-    background-color: #ffffff;
+    background-color: #6482AD;
     clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
     content: "";
     height: 100%;

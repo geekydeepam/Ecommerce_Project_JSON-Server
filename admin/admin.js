@@ -24,8 +24,7 @@ let tbody=document.getElementById("tbody")
 
 function Clear()
 {
-    document.getElementById("inpbox").value=""
-    getProducts()
+    window.location.href="admin.html"
 }
 
 getProducts()
@@ -46,7 +45,7 @@ async function getProducts() {
     }  
 }
 
- function mapdata(el,i,arr)
+ function mapdata(el)
 {
     let newRow=document.createElement("tr")
 
@@ -86,10 +85,11 @@ async function getProducts() {
     let crud=document.createElement("td")
     crud.setAttribute("class","crud")
     
-    let edit=document.createElement("a")
+    let edit=document.createElement("button")
     edit.setAttribute("class","btn btn-primary mt-2")
-    edit.href=`../Edit/Edit.html`
     edit.innerText="EDIT"
+    edit.value=el.id
+    edit.addEventListener("click",EditProduct)
     let editdiv=document.createElement("div")
     editdiv.append(edit)
 
@@ -110,35 +110,94 @@ async function getProducts() {
 
     crud.append(editdiv,deldiv,detdiv)
 
-    let ed=document.createElement("td")
+    // let ed=document.createElement("td")
     
-    let edbtn=document.createElement("button")
-    edbtn.value=[`${el.id}`,`${el.status}`]
-    edbtn.addEventListener("click",EnaDisa)
+    // let edbtn=document.createElement("button")
+    // edbtn.value=[`${el.id}`,`${el.status}`]
+    // edbtn.addEventListener("click",EnaDisa)
 
-    if(el.status)
-    {
-        edbtn.setAttribute("class","btn btn-success")
-        edbtn.innerText="Enabled"
-    }
-    else{
-        edbtn.setAttribute("class","btn btn-danger")
-        edbtn.innerText="Disabled"
-    }
-    ed.append(edbtn)
+    // if(el.status)
+    // {
+    //     edbtn.setAttribute("class","btn btn-success")
+    //     edbtn.innerText="Enabled"
+    // }
+    // else{
+    //     edbtn.setAttribute("class","btn btn-danger")
+    //     edbtn.innerText="Disabled"
+    // }
+    // ed.append(edbtn)
 
-    newRow.append(id,title,price,description,category,imageR,rating,crud,ed)
+    newRow.append(id,title,price,description,category,imageR,rating,crud)
 
     tbody.append(newRow)
 
 }
 
-async function  deleteME(params) {
-    await fetch(`http://localhost:3000/Products/${this.value}`,{
+  async function  deleteME() {
+    let t=confirm("Are You Sure?")
+    if(t)
+    {
+        
+        try {
+            //delete from respected cart
+            DeleteFromCat(this.value)
+    
+            //delte from Product json-endpoints
+            await fetch(`http://localhost:3000/Products/${this.value}`,{
+                method:"DELETE"
+            })
+           
+        } catch (error) {
+            console.log(error)
+        }
+    }
+    
+
+    
+}
+
+async function DeleteFromCat(id) {
+
+    let data =await fetch(`http://localhost:3000/Products/${id}`)
+    let actualdata=await  data.json() 
+
+    alert(actualdata.category)
+
+    let api=""
+    switch (actualdata.category) {
+        case "men's clothing":
+            api="Mens"
+            break;
+        case "women's clothing":
+            api="Womens"
+            break;
+        case "jewelery":
+            api="Jewelery"
+            break;
+        case "electronics":
+            api="Electronics"
+            break;
+        default:
+            alert("Invalid  Category")
+            break;
+    }
+    await fetch(`http://localhost:3000/${api}/${id}`,{
         method:"DELETE"
     })
-    alert("Deleted Succesfully")
+
+   alert(`delted in ${api}` );
 }
+
+async function EditProduct()
+{
+    let data=await fetch(`http://localhost:3000/Products/${this.value}`)
+    let actualdata= await data.json()
+
+    let Product_Details=[actualdata]
+    localStorage.setItem("Prod",JSON.stringify(Product_Details))
+    window.location.href="../Edit/Edit.html"
+}
+
 
 let searchBtn=document.getElementById("inpbtn")
 
@@ -201,21 +260,25 @@ async function mapProductData(obj) {
     let crud=document.createElement("td")
     crud.setAttribute("class","crud")
     
-    let edit=document.createElement("a")
-    edit.href=""
+    let edit=document.createElement("button")
+    edit.setAttribute("class","btn btn-primary mt-2")
     edit.innerText="EDIT"
+    edit.value=obj.id
     let editdiv=document.createElement("div")
     editdiv.append(edit)
 
-    let del=document.createElement("a")
-    del.href=""
+    let del=document.createElement("button")
+    del.setAttribute("class","btn btn-danger mt-2")
+    del.value=`${obj.id}`
     del.innerText="DELETE"
+    del.addEventListener("click",deleteME)
     let deldiv=document.createElement("div")
     deldiv.append(del)
 
     let details=document.createElement("a")
+    details.setAttribute("class","btn btn-success mt-2")
     details.href=""
-    details.innerText="DETAILS"
+    details.innerText="ANALYTICS"
     let detdiv=document.createElement("div")
     detdiv.append(details)
 

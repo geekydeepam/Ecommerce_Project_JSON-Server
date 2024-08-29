@@ -205,15 +205,63 @@
       }
     },
     {
-      "id": "21",
       "title": "Dior Combat Derby Shoe",
-      "price": "350",
+      "price": "300",
       "description": "The Dior Combat derby shoe presents a hybrid, contemporary and athletic silhouette. The khaki polished calfskin is embellished with beige and black Dior Oblique jacquard panels on the sides and tongue. The shoe features laces and a technical zip closure, while the lightweight hybrid sole accentuates its couture appeal. ",
       "category": "men's clothing",
       "image": "https://www.dior.com/couture/ecommerce/media/catalog/product/7/2/1722012852_3DE379ZXF_H651_E02_GHC.jpg?imwidth=870",
       "rating": {
         "rate": "4",
         "count": "200"
+      },
+      "id": "21"
+    },
+    {
+      "id": "22",
+      "title": "Sony PlayStation®5 Console (slim)",
+      "price": "800",
+      "description": "Slim Design: With PS5, players get powerful gaming technology packed inside a sleek and compact console design. 1TB of Storage: Keep your favorite games ready and waiting for you to jump in and play with 1TB of SSD storage built in. Ultra-High Speed SSD: Maximize your play sessions with near instant load times for installed PS5 games.",
+      "category": "electronics",
+      "image": "https://a.media-amazon.com/images/I/51ljnEaW0pL._AC_UY218_.jpg",
+      "rating": {
+        "rate": "5",
+        "count": "345"
+      }
+    },
+    {
+      "id": "23",
+      "title": "WHP Jewellers Women Brass Yellow Gold Earrings For Girls &, 22K (916) Bis Hallmark Pure Gold, Jewellery, Fashion Accessories, Anniversary Gift For Wife",
+      "price": "1500",
+      "description": "22K BIS Hallmark: The jewellery for women is expertly crafted from high-quality 22K Yellow Gold. The yellow gold earrings for women fashion is a BIS Hallmark sign for authenticity.",
+      "category": "jewelery",
+      "image": "https://a.media-amazon.com/images/I/61EgtVRDioL._SY575_.jpg",
+      "rating": {
+        "rate": "4",
+        "count": "29"
+      }
+    },
+    {
+      "id": "24",
+      "title": "Swasti Jewels American Diamond CZ Fashion Jewellery Traditional Ethnic Pearls Gold Plated Jhumka Earrings for Women",
+      "price": "100",
+      "description": "Pearl, Gold, Cubic Zirconia, Diamond",
+      "category": "jewelery",
+      "image": "https://a.media-amazon.com/images/I/71OXYe5yuFL._SY575_.jpg",
+      "rating": {
+        "rate": "4",
+        "count": "243"
+      }
+    },
+    {
+      "id": "25",
+      "title": "Moto G85 5G (128, Cobalt Blue, New)",
+      "price": "900",
+      "description": "Motorola snapdragon 888",
+      "category": "electronics",
+      "image": "https://a.media-amazon.com/images/I/51lcV2EKggL._SX522_.jpg",
+      "rating": {
+        "rate": "4",
+        "count": "45"
       }
     }
   ],
@@ -245,17 +293,17 @@
       }
     },
     {
-      "id": "21",
       "title": "Dior Combat Derby Shoe",
-      "price": "350",
+      "price": "300",
       "description": "The Dior Combat derby shoe presents a hybrid, contemporary and athletic silhouette. The khaki polished calfskin is embellished with beige and black Dior Oblique jacquard panels on the sides and tongue. The shoe features laces and a technical zip closure, while the lightweight hybrid sole accentuates its couture appeal. ",
       "category": "men's clothing",
       "image": "https://www.dior.com/couture/ecommerce/media/catalog/product/7/2/1722012852_3DE379ZXF_H651_E02_GHC.jpg?imwidth=870",
       "rating": {
         "rate": "4",
         "count": "200"
+      },
+      "id": "21"
     }
-  }
   ],
   "Womens": [
     {
@@ -415,6 +463,30 @@
         "rate": 2.2,
         "count": 140
       }
+    },
+    {
+      "id": "22",
+      "title": "Sony PlayStation®5 Console (slim)",
+      "price": "800",
+      "description": "Slim Design: With PS5, players get powerful gaming technology packed inside a sleek and compact console design. 1TB of Storage: Keep your favorite games ready and waiting for you to jump in and play with 1TB of SSD storage built in. Ultra-High Speed SSD: Maximize your play sessions with near instant load times for installed PS5 games.",
+      "category": "electronics",
+      "image": "https://a.media-amazon.com/images/I/51ljnEaW0pL._AC_UY218_.jpg",
+      "rating": {
+        "rate": "5",
+        "count": "345"
+      }
+    },
+    {
+      "id": "25",
+      "title": "Moto G85 5G (128, Cobalt Blue, New)",
+      "price": "900",
+      "description": "Motorola snapdragon 888",
+      "category": "electronics",
+      "image": "https://a.media-amazon.com/images/I/51lcV2EKggL._SX522_.jpg",
+      "rating": {
+        "rate": "4",
+        "count": "45"
+      }
     }
   ],
   "Jewelery": [
@@ -456,6 +528,30 @@
         "rate": 1.9,
         "count": 100
       }
+    },
+    {
+      "id": "23",
+      "title": "WHP Jewellers Women Brass Yellow Gold Earrings For Girls &, 22K (916) Bis Hallmark Pure Gold, Jewellery, Fashion Accessories, Anniversary Gift For Wife",
+      "price": "1500",
+      "description": "22K BIS Hallmark: The jewellery for women is expertly crafted from high-quality 22K Yellow Gold. The yellow gold earrings for women fashion is a BIS Hallmark sign for authenticity.",
+      "category": "jewelery",
+      "image": "https://a.media-amazon.com/images/I/61EgtVRDioL._SY575_.jpg",
+      "rating": {
+        "rate": "4",
+        "count": "29"
+      }
+    },
+    {
+      "id": "24",
+      "title": "Swasti Jewels American Diamond CZ Fashion Jewellery Traditional Ethnic Pearls Gold Plated Jhumka Earrings for Women",
+      "price": "100",
+      "description": "Pearl, Gold, Cubic Zirconia, Diamond",
+      "category": "jewelery",
+      "image": "https://a.media-amazon.com/images/I/71OXYe5yuFL._SY575_.jpg",
+      "rating": {
+        "rate": "4",
+        "count": "243"
+      }
     }
   ],
   "Users": [
@@ -471,7 +567,7 @@
     {
       "Username": "saniya123",
       "Password": "saniya",
-      "Fullname": "Naitik Madavi",
+      "Fullname": "Saniya Dule",
       "role": "user",
       "Mobile": "7734638475",
       "Email": "na@gmail.com",
@@ -488,20 +584,11 @@
     },
     {
       "id": "4",
-      "Username": "Saniya1234",
-      "Password": "sanu",
-      "Fullname": "Saniya Dilip Dule",
+      "Username": "Yash",
+      "Password": "Yash123",
+      "Fullname": "Yash Meshram",
       "role": "user",
-      "Mobile": "5654353465",
-      "Email": "a@gmail.com"
-    },
-    {
-      "id": "5",
-      "Username": "yash",
-      "Password": "yash@123",
-      "Fullname": "yash",
-      "role": "user",
-      "Mobile": "34567422",
+      "Mobile": "7493789983",
       "Email": "yash@gmail.com"
     }
   ],
@@ -517,16 +604,6 @@
       "total": 10.99
     },
     {
-      "id": "2",
-      "Product_ID": "4",
-      "ProductName": "Mens Casual Slim Fit",
-      "image": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
-      "UserID": "2",
-      "Username": "saniya123",
-      "Quantity": 2,
-      "total": "150"
-    },
-    {
       "id": "3",
       "Product_ID": "6",
       "ProductName": "Solid Gold Petite Micropave ",
@@ -537,14 +614,34 @@
       "total": "168"
     },
     {
-      "id": "4",
-      "Product_ID": "13",
-      "ProductName": "Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin",
-      "image": "https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg",
+      "id": "3",
+      "Product_ID": "23",
+      "ProductName": "WHP Jewellers Women Brass Yellow Gold Earrings For Girls &, 22K (916) Bis Hallmark Pure Gold, Jewellery, Fashion Accessories, Anniversary Gift For Wife",
+      "image": "https://a.media-amazon.com/images/I/61EgtVRDioL._SY575_.jpg",
       "UserID": "2",
       "Username": "saniya123",
       "Quantity": 1,
-      "total": 599
+      "total": "1500"
+    },
+    {
+      "id": "4",
+      "Product_ID": "6",
+      "ProductName": "Solid Gold Petite Micropave ",
+      "image": "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg",
+      "UserID": 4,
+      "Username": "Yash",
+      "Quantity": 2,
+      "total": "168"
+    },
+    {
+      "id": "5",
+      "Product_ID": "22",
+      "ProductName": "Sony PlayStation®5 Console (slim)",
+      "image": "https://a.media-amazon.com/images/I/51ljnEaW0pL._AC_UY218_.jpg",
+      "UserID": 4,
+      "Username": "Yash",
+      "Quantity": 1,
+      "total": "800"
     }
   ]
 }
