@@ -253,16 +253,16 @@
       }
     },
     {
-      "id": "25",
       "title": "Moto G85 5G (128, Cobalt Blue, New)",
-      "price": "900",
-      "description": "Motorola snapdragon 888",
+      "price": "600",
+      "description": "Motorola snapdragon 888\n",
       "category": "electronics",
       "image": "https://a.media-amazon.com/images/I/51lcV2EKggL._SX522_.jpg",
       "rating": {
         "rate": "4",
         "count": "45"
-      }
+      },
+      "id": "25"
     }
   ],
   "Mens": [
@@ -476,16 +476,16 @@
       }
     },
     {
-      "id": "25",
       "title": "Moto G85 5G (128, Cobalt Blue, New)",
-      "price": "900",
-      "description": "Motorola snapdragon 888",
+      "price": "600",
+      "description": "Motorola snapdragon 888\n",
       "category": "electronics",
       "image": "https://a.media-amazon.com/images/I/51lcV2EKggL._SX522_.jpg",
       "rating": {
         "rate": "4",
         "count": "45"
-      }
+      },
+      "id": "25"
     }
   ],
   "Jewelery": [
@@ -641,6 +641,16 @@
       "Username": "Yash",
       "Quantity": 2,
       "total": "800"
+    },
+    {
+      "id": "6",
+      "Product_ID": "8",
+      "ProductName": "Pierced Owl Rose Gold Plated Stainless Steel Double",
+      "image": "https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg",
+      "UserID": "2",
+      "Username": "saniya123",
+      "Quantity": 1,
+      "total": 10.99
     }
   ]
 }
