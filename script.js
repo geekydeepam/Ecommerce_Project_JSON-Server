@@ -180,7 +180,7 @@ async function getMensProduct() {
    
     let data1=await fetch(`${api}?_page=1&_per_page=${per_page}`)
     let actualdata1=await data1.json()
-    actualdata1.data.forEach(mapdata)
+    actualdata1.forEach(mapdata)
 
     cat_name.innerText="Men's"
 }
@@ -199,7 +199,7 @@ async function getWomensProduct() {
     
     let data1=await fetch(`${api}?_page=1&_per_page=${per_page}`)
     let actualdata1=await data1.json()
-    actualdata1.data.forEach(mapdata)
+    actualdata1.forEach(mapdata)
 
     cat_name.innerText="Women's"
 }
@@ -219,7 +219,7 @@ async function getElecProduct() {
     
     let data1=await fetch(`${api}?_page=1&_per_page=${per_page}`)
     let actualdata1=await data1.json()
-    actualdata1.data.forEach(mapdata)
+    actualdata1.forEach(mapdata)
 
     cat_name.innerText="Electronics's"
 }
@@ -238,7 +238,7 @@ async function getJewProduct() {
     
     let data1=await fetch(`${api}?_page=1&_per_page=${per_page}`)
     let actualdata1=await data1.json()
-    actualdata1.data.forEach(mapdata)
+    actualdata1.forEach(mapdata)
 
     cat_name.innerText="Jewelery's"
 }
