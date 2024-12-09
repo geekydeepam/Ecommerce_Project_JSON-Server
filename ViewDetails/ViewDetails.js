@@ -48,7 +48,7 @@ function  displayItemDetails()
     {
         let  star=document.createElement("h5")
         star.setAttribute("class","text-warning")
-        if(i<=Math.floor(itemData.rating.rate))
+        if(i<=Math.floor(parseInt(itemData.rating.rate)))
         {
         star.innerHTML="<i class=\"fa-solid fa-star\"></i>"
         }

@@ -131,7 +131,7 @@ async function getProducts() {
     price.innerText=`${el.price} /-`
 
     let ProductImage=document.createElement("img")
-    ProductImage.setAttribute("class","Image")
+    ProductImage.setAttribute("class","Image img-fluid")
     ProductImage.src=el.image
 
     let ProductLink=document.createElement("button")

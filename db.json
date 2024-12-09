@@ -1,7 +1,7 @@
 {
   "Products": [
     {
-      "title": "Mens Cotton Jacket",
+      "title": "Mens Cotton Shirt",
       "price": "100",
       "description": "great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors. Good gift choice for you or your family member. A warm hearted love to Father, husband or son in this thanksgiving or Christmas Day.",
       "category": "men's clothing",
@@ -253,14 +253,14 @@
       }
     },
     {
-      "title": "Moto G85 5G (128, Cobalt Blue, New)",
-      "price": "600",
-      "description": "Motorola snapdragon 888\n",
-      "category": "electronics",
-      "image": "https://a.media-amazon.com/images/I/51lcV2EKggL._SX522_.jpg",
+      "title": "Apple Watch S9",
+      "price": "4000",
+      "description": "bytnynvbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbvvvvb",
+      "category": "men's clothing",
+      "image": "https://i.gifer.com/2smd.gif",
       "rating": {
         "rate": "4",
-        "count": "45"
+        "count": "233"
       },
       "id": "25"
     }
@@ -292,8 +292,7 @@
       "id": "21"
     },
     {
-      "id": "3",
-      "title": "Mens Cotton Jacket",
+      "title": "Mens Cotton Shirt",
       "price": "100",
       "description": "great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors. Good gift choice for you or your family member. A warm hearted love to Father, husband or son in this thanksgiving or Christmas Day.",
       "category": "men's clothing",
@@ -301,6 +300,19 @@
       "rating": {
         "rate": "4",
         "count": "500"
+      },
+      "id": "3"
+    },
+    {
+      "id": "25",
+      "title": "Apple Watch S9",
+      "price": "4000",
+      "description": "bytnynvbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbvvvvb",
+      "category": "men's clothing",
+      "image": "https://i.gifer.com/2smd.gif",
+      "rating": {
+        "rate": "4",
+        "count": "233"
       }
     }
   ],
@@ -474,18 +486,6 @@
         "rate": "5",
         "count": "345"
       }
-    },
-    {
-      "title": "Moto G85 5G (128, Cobalt Blue, New)",
-      "price": "600",
-      "description": "Motorola snapdragon 888\n",
-      "category": "electronics",
-      "image": "https://a.media-amazon.com/images/I/51lcV2EKggL._SX522_.jpg",
-      "rating": {
-        "rate": "4",
-        "count": "45"
-      },
-      "id": "25"
     }
   ],
   "Jewelery": [
@@ -591,66 +591,5 @@
       "Email": "yash@gmail.com"
     }
   ],
-  "Cart": [
-    {
-      "id": "3",
-      "Product_ID": "8",
-      "ProductName": "Pierced Owl Rose Gold Plated Stainless Steel Double",
-      "image": "https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg",
-      "UserID": "1",
-      "Username": "saniya123`",
-      "Quantity": 1,
-      "total": 10.99
-    },
-    {
-      "id": "3",
-      "Product_ID": "6",
-      "ProductName": "Solid Gold Petite Micropave ",
-      "image": "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg",
-      "UserID": "2",
-      "Username": "saniya123",
-      "Quantity": 1,
-      "total": "168"
-    },
-    {
-      "id": "3",
-      "Product_ID": "23",
-      "ProductName": "WHP Jewellers Women Brass Yellow Gold Earrings For Girls &, 22K (916) Bis Hallmark Pure Gold, Jewellery, Fashion Accessories, Anniversary Gift For Wife",
-      "image": "https://a.media-amazon.com/images/I/61EgtVRDioL._SY575_.jpg",
-      "UserID": "2",
-      "Username": "saniya123",
-      "Quantity": 1,
-      "total": "1500"
-    },
-    {
-      "id": "4",
-      "Product_ID": "6",
-      "ProductName": "Solid Gold Petite Micropave ",
-      "image": "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg",
-      "UserID": 4,
-      "Username": "Yash",
-      "Quantity": 2,
-      "total": "168"
-    },
-    {
-      "id": "5",
-      "Product_ID": "22",
-      "ProductName": "Sony PlayStation®5 Console (slim)",
-      "image": "https://a.media-amazon.com/images/I/51ljnEaW0pL._AC_UY218_.jpg",
-      "UserID": 4,
-      "Username": "Yash",
-      "Quantity": 2,
-      "total": "800"
-    },
-    {
-      "id": "6",
-      "Product_ID": "8",
-      "ProductName": "Pierced Owl Rose Gold Plated Stainless Steel Double",
-      "image": "https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg",
-      "UserID": "2",
-      "Username": "saniya123",
-      "Quantity": 1,
-      "total": 10.99
-    }
-  ]
+  "Cart": []
 }

@@ -5,10 +5,7 @@
     font-family: satoshi;
     
 }
-body{
-    
 
-}
 
 #navbar{
     background-color: antiquewhite;
@@ -167,4 +164,30 @@ body{
   .button-48 span {
     z-index: 1;
     position: relative;
+  }
+
+
+  @media screen and (width<=700px) {
+    #Products
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+  }
+  @media screen and (width>=700px) and (width<=1024px) {
+    #Products
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+  }
+  @media screen and (width>=1024px) and (width<=1440px){
+    #Products
+    {
+        grid-template-columns: repeat(3,1fr);
+    }
+  }
+  @media screen and (width>=1440px)  and (width<=1820px){
+    #Products
+    {
+        grid-template-columns: repeat(4,1fr);
+    }
   }
