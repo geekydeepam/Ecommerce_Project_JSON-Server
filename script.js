@@ -92,7 +92,7 @@ async function getProducts() {
     product.innerHTML=""
     let data1=await fetch(`${api}?_page=1&_per_page=${per_page}`)
     let actualdata1=await data1.json()
-    actualdata1.data.forEach(mapdata)
+    actualdata1.forEach(mapdata)
 
     cat_name.innerText="All Category"
     
