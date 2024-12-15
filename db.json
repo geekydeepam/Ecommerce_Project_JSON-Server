@@ -1,18 +1,6 @@
 {
   "Products": [
     {
-      "title": "Mens Cotton Shirt",
-      "price": "100",
-      "description": "great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors. Good gift choice for you or your family member. A warm hearted love to Father, husband or son in this thanksgiving or Christmas Day.",
-      "category": "men's clothing",
-      "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
-      "rating": {
-        "rate": "4",
-        "count": "500"
-      },
-      "id": "3"
-    },
-    {
       "title": "Mens Casual Slim Fit",
       "price": "150",
       "description": "The color could be slightly different between on the screen and in practice. / Please note that body builds vary by person, therefore, detailed size information should be reviewed below on the product description.",
@@ -35,18 +23,6 @@
         "count": "70"
       },
       "id": "6"
-    },
-    {
-      "title": "White Gold Plated Princess",
-      "price": "200",
-      "description": "Classic Created Wedding Engagement Solitaire Diamond Promise Ring for Her. Gifts to spoil your love more for Engagement, Wedding, Anniversary, Valentine's Day...",
-      "category": "jewelery",
-      "image": "https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg",
-      "rating": {
-        "rate": "3",
-        "count": "400"
-      },
-      "id": "7"
     },
     {
       "id": "8",
@@ -251,18 +227,6 @@
         "rate": "4",
         "count": "243"
       }
-    },
-    {
-      "title": "Apple Watch S9",
-      "price": "4000",
-      "description": "bytnynvbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbvvvvb",
-      "category": "men's clothing",
-      "image": "https://i.gifer.com/2smd.gif",
-      "rating": {
-        "rate": "4",
-        "count": "233"
-      },
-      "id": "25"
     }
   ],
   "Mens": [
@@ -290,30 +254,6 @@
         "count": "200"
       },
       "id": "21"
-    },
-    {
-      "title": "Mens Cotton Shirt",
-      "price": "100",
-      "description": "great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors. Good gift choice for you or your family member. A warm hearted love to Father, husband or son in this thanksgiving or Christmas Day.",
-      "category": "men's clothing",
-      "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
-      "rating": {
-        "rate": "4",
-        "count": "500"
-      },
-      "id": "3"
-    },
-    {
-      "id": "25",
-      "title": "Apple Watch S9",
-      "price": "4000",
-      "description": "bytnynvbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbvvvvb",
-      "category": "men's clothing",
-      "image": "https://i.gifer.com/2smd.gif",
-      "rating": {
-        "rate": "4",
-        "count": "233"
-      }
     }
   ],
   "Womens": [
@@ -503,19 +443,6 @@
       }
     },
     {
-      "id": "7",
-      "title": "White Gold Plated Princess",
-      "price": 9.99,
-      "description": "Classic Created Wedding Engagement Solitaire Diamond Promise Ring for Her. Gifts to spoil your love more for Engagement, Wedding, Anniversary, Valentine's Day...",
-      "status": false,
-      "category": "jewelery",
-      "image": "https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg",
-      "rating": {
-        "rate": 3,
-        "count": 400
-      }
-    },
-    {
       "id": "8",
       "title": "Pierced Owl Rose Gold Plated Stainless Steel Double",
       "price": 10.99,
@@ -591,5 +518,26 @@
       "Email": "yash@gmail.com"
     }
   ],
-  "Cart": []
+  "Cart": [
+    {
+      "id": "1",
+      "Product_ID": "3",
+      "ProductName": "Mens Cotton Shirt",
+      "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+      "UserID": "2",
+      "Username": "saniya123",
+      "Quantity": 6,
+      "total": "100"
+    },
+    {
+      "id": "2",
+      "Product_ID": "4",
+      "ProductName": "Mens Casual Slim Fit",
+      "image": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
+      "UserID": "2",
+      "Username": "saniya123",
+      "Quantity": 3,
+      "total": "150"
+    }
+  ]
 }
