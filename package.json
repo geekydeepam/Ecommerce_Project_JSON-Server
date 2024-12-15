@@ -4,7 +4,7 @@
   "description": "My eCommerce app with JSON Server",
   "main": "index.html",
   "scripts": {
-    "start":"concurrently \"npx json-server --watch db.json\" \"npx live-server\""
+    "start":"concurrently \"npx json-server --watch db.json\" \"npm start\""
   },
   "dependencies": {
     "json-server": "^0.17.4"
