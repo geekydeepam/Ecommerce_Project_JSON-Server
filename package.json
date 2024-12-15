@@ -4,9 +4,12 @@
   "description": "My eCommerce app with JSON Server",
   "main": "index.html",
   "scripts": {
-    "start": "json-server --watch db.json --port 3000"
+    "start":"concurrently \"npx json-server --watch db.json\" \"npx live-server\""
   },
   "dependencies": {
     "json-server": "^0.17.4"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
   }
 }
